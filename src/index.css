@@ -19,49 +19,27 @@
 }
 
 body {
-  background: #e5be5e;
+  background: #1a181264;
   color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 100%;
   margin: 10rem auto;
-}
-
-.card-container {
-  /*  min -- choose smallest width  */
-  width: min(90%, 900px);
-  border: 3px solid hotpink;
-  padding: min(1vh, 1rem) 1.5rem;
-  margin-inline: auto;
+  min-height: 100vh;
 }
 
 .card {
   background-color: #1a1b21;
-  width: min(28ch, 100%);
-  height: auto;
-  margin-inline: auto;
+  width: min(500px, 90%);
+  margin: 0 auto;
   overflow: hidden;
-}
-
-.card-img {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: attr(max-width) / attr(height);
-  background-position: center;
 }
 
 .card-body {
   padding: max(1.5ch, 1rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .card h1 {
-  /*   padding:max(1vh,0.1rem); */
   font-weight: bold;
-  /*  clamp(MIN, VAL, MAX)  */
-  /*   font-size:clamp(3rem,10vh + 1rem , 2rem); */
-
   font-size: var(--step-0);
 }
 
@@ -82,20 +60,12 @@ h1,
   text-align: center;
 }
 
-.social-btn {
-  padding: 0.5rem 0;
-}
-
 button {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0.45rem var(--step-0);
+  padding: 0.35rem 0;
   border-radius: 6px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   gap: 0.3rem;
-  font-size: var(--step--2);
+  font-size: var(--step--1);
 }
 
 .email-btn {
@@ -104,28 +74,15 @@ button {
   color: #374151;
 }
 
-.linkedin-btn {
-  background: #5093e2;
-  border: none;
-  color: #fff;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 3rem;
-}
-
-.text-container h2 {
+h2 {
   font-size: var(--step--1);
   color: #f5f5f5;
-  padding: 0.4rem 0;
 }
+
 .text-detail {
   font-size: var(--step--3);
   color: #dcdcdc;
-  width: min(50rem, 100%);
+  width: min(20rem, 65%);
   line-height: 150%;
   word-break: break-word;
 }
@@ -134,7 +91,7 @@ button {
   background: #161619;
   border-radius: 0px 0px 10px 10px;
   width: 100%;
-  padding-top: 1vh;
+  padding-top: 1.3vh;
 }
 
 .footer-icon {
@@ -150,8 +107,4 @@ button {
 
 .footer-icon .fa-brands {
   color: #918e9b;
-
-  /* font-size: var(--step-2); */
-  /* width: 25px;
-  height: 25px; */
 }

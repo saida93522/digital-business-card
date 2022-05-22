@@ -1,25 +1,23 @@
-import UserInfo from "./components/UserInfo";
 import About from "./components/About";
+import Button from "./components/Button";
+import UserInfo from "./components/UserInfo";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <section className="card-container">
-      <div className="card">
-        <img
-          src="user_img.jpg"
-          className="object-cover card-image"
-          alt="logo"
-          width="400"
-          height="400"
-        />
-        <div className="card-body">
-          <UserInfo />
-          <About />
-        </div>
-        <Footer />
+    <div className="card rounded-lg shadow-2xl shadow-black">
+      <img
+        src="card_image.jpg"
+        className="card-image object-cover min-w-full"
+        alt="logo"
+      />
+      <div className="card-body container">
+        <UserInfo />
+        <Button />
+        <About />
       </div>
-    </section>
+      <Footer />
+    </div>
   );
 }
 

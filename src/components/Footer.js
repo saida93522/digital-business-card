@@ -3,6 +3,7 @@ import {
   faTwitterSquare,
   faFacebookSquare,
   faInstagramSquare,
+  faLinkedin,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -30,6 +31,9 @@ const Footer = () => {
             size="lg"
             className="fa-brands"
           />
+        </a>
+        <a href="/github">
+          <FontAwesomeIcon icon={faLinkedin} size="lg" className="fa-brands" />
         </a>
         <a href="/github">
           <FontAwesomeIcon
